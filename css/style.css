@@ -7,6 +7,11 @@ a {
   text-decoration: none;
   display: inline-block;
 }
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+  line-height: 0.7;
+}
 ul,
 ol {
   list-style-type: none;
@@ -19,7 +24,11 @@ ol {
 /* Header Part Start  */
 #headerPart {
   padding: 30px 0;
-  background: #000;
+  /* background: #000;  */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .headercontent{
   display: flex;
@@ -50,22 +59,94 @@ ol {
   color: #ffa415;
 }
 .icon a{
-  padding: 17px 37px;
+  padding: 15px 20px;
   background: tomato;
   color: #fff;
   border-radius: 30px;
   font-size: 17px;
   font-weight: 700;
   font-family: "Nunito Sans", sans-serif;
-  border-style: solid;
-  border-width: 3px;
+  border: 1px solid tomato;
   transition: .4s;
 }
 .icon a:hover{
-  background: #000;
-  color: tomato;
+  background: transparent;
+  border: 1px solid tomato;
 }
 /* Header Part End  */
+
+/* banner Part Start  */
+#bannerPart{
+  background: url(../images/slider-2-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bannerOverlay{
+  padding-top: 270px;
+  padding-bottom: 230px;
+  background: #00000064;
+}
+.bannerText h1{
+  font-size: 65px;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900;
+  width: 620px;
+  line-height: 78px;
+}
+.bannerText h1 span{
+  color: #ffa415;
+  border-bottom: 3px solid;
+}
+.bannerText a{
+  padding: 20px 30px;
+  background: #ffa415;
+  border-radius: 30px;
+  color: white;
+  font-size: 17px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
+  border: 1px solid #ffa415;
+  transition: .4s;
+}
+.bannerText a:hover{
+  background: transparent;
+  border: 1px solid #ffa415;
+}
+/* banner Part End  */
+
+/* Donation Part Start  */
+#donationPart{
+  padding-bottom: 120px;
+}
+.donationFlex{
+  display: flex;
+  justify-content: space-between;
+}
+.donationItem{
+  width: 30%;
+  position: relative;
+}
+.donationItem img{
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+.donationBox{
+  width: 83%;
+  background: red;
+  border-radius: 58px;
+  padding: 30px 35px;
+  position: absolute;
+  top: -33px;
+  left: 0;
+}
+/* Donation Part End  */
+
+
+
+
 
 /* Header Part Start  */
 /* Header Part End  */
