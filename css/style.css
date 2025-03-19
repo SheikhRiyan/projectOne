@@ -20,6 +20,9 @@ ol {
   width: 1320px;
   margin: 0 auto;
 }
+.row{
+  display: flex;
+}
 /* All Common CSS End  */
 /* Header Part Start  */
 #headerPart {
@@ -135,21 +138,324 @@ ol {
 }
 .donationBox{
   width: 83%;
-  background: red;
+  background: white;
   border-radius: 58px;
   padding: 30px 35px;
   position: absolute;
-  top: -33px;
+  top: -60px;
   left: 0;
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  transition: .4s; 
+}
+.donationBox i{
+  color: #ffa415;
+  font-size: 35px;
+}
+.text h3{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #122F2a;
+}
+.text p{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #122F2a;
+}
+.box{
+  padding: 25px 0px;
+  background: #fff;
+  width: 50px;  
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  position: absolute;
+  top: 105px;
+  left: 175px;
+}
+.box span{
+  color: #ffa415;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Caveat", cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.circle{
+  background: #ffa415;
+  width: 35px;
+  position: absolute;
+  left: 182px;
+  top: 400px;
+  border-radius: 50%;
+}
+.second .circle{
+  background: #ff5528;
+  width: 35px;
+  position: absolute;
+  left: 182px;
+  top: 400px;
+  border-radius: 50%;
+}
+.third .circle{
+  background: #8742e8;
+  width: 35px;
+  position: absolute;
+  left: 182px;
+  top: 400px;
+  border-radius: 50%;
+}
+.circle i{
+  color: #fff;
+}
+.second .circle i{
+  color: #fff;
+}
+.third .circle i{
+  color: #fff;
+}
+.donationItem:hover .donationBox{
+  background: #ffa415;
+}
+.donationItem:hover .donationBox i{
+  color: #fff;
+}
+.donationItem:hover .donationBox .text h3{
+  color: #fff;
+}
+.donationItem:hover .donationBox .text p{
+  color: #fff;
+}
+.second{
+  width: 83%;
+  background: white;
+  border-radius: 58px;
+  padding: 30px 35px;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  transition: .4s; 
+}
+.second i{
+  color: #ff5528;
+  font-size: 35px;
+}
+.second h3{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #122F2a;
+}
+.second p{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #122F2a;
+}
+.box{
+  padding: 25px 0px;
+  background: #fff;
+  width: 50px;  
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  position: absolute;
+  top: 105px;
+  left: 175px;
+}
+.second .box span{
+  color: #ff5528;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Caveat", cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.donationItem:hover .second{
+  background: #ff5528;
+}
+.donationItem:hover .second i{
+  color: #fff;
+}
+.third{
+  width: 83%;
+  background: white;
+  border-radius: 58px;
+  padding: 30px 35px;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  transition: .4s; 
+}
+.third i{
+  color: #8742e8;
+  font-size: 35px;
+}
+.third h3{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #122F2a;
+}
+.third p{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #122F2a;
+}
+.box{
+  padding: 25px 0px;
+  background: #fff;
+  width: 50px;  
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  position: absolute;
+  top: 105px;
+  left: 175px;
+}
+.third .box span{
+  color: #8742e8;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Caveat", cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.donationItem:hover .third{
+  background: #8742e8;
+}
+.donationItem:hover .third i{
+  color: #fff;
 }
 /* Donation Part End  */
 
+/* About Part Start  */
+#aboutPart{
+  padding: 100px 0;
+}
+.aboutLeft img{
+  border-radius: 20px;
+}
+.aboutLeft{
+  margin-right: 30px;
+}
+.aboutRight h5{
+  font-size: 22px;
+  color: #ff5528;
+  font-family: "Caveat", cursive;
+}
+.aboutRight h3{
+  font-size: 40px;
+  color: #122F2a;
+  font-family: "Nunito Sans", sans-serif;
+  width: 535px;
+  font-weight: 700;
+  line-height: 50px;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+.aboutRight p{
+  width: 485px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #122F2a;
+  font-family: "Rubik", sans-serif;
+}
+.rightFlex{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.rightItemIcon{
+  width: 10%;
+}
+.rightItemIcon h3{
+  font-size: 18px;
+}
+.rightItemIcon i{
+  font-size: 50px;
+  line-height: 50px;
+  color: #ffa415;
+}
+.rightItemIcon p{
+  margin-top: -40px;
+  font-size: 26px;
+  font-family: "Caveat", cursive;
+}
+.first i{
+  color: #ffa415;
+}
+.first p{
+  color: #ffa415;
+}
+.scnd i{
+  color: #ff5528;
+}
+.scnd p{
+  color: #ff5528;
+}
+.thrd i{
+  color: #8742e8;
+}
+.thrd p{
+  color: #8742e8;
+}
+.line{
+    padding: 0px 0px 35px 0px;
+    width: 550px;
+    border-bottom: 1px solid var(--careox-border-color, #dddddd);
+}
+.authorOne{
+  display: flex;
+  align-items: center;
+}
+.authorOne img{
+  margin-top: 25px;
+  margin-right: 25px;
+  border-radius: 50%;
+  font-size: 16px;
+  width: 73px;
+  height: 73px;
+}
+.authorOne .txt h3{
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 800;
+  width:151.391px;
+  height: 28.7969px;
+}
+.authorOne .txt p{
+  font-size: 16px;
+  margin-top: -33px;
+}
+.sign img{
+  font-size: 16px;
+  width: 242px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: -300px;
+}
+/* About Part End  */
 
 
-
-
-/* Header Part Start  */
-/* Header Part End  */
 /* Header Part Start  */
 /* Header Part End  */
 /* Header Part Start  */
